@@ -2,9 +2,11 @@ import { Routes, Route, Link } from 'react-router-dom';
 import { Lock, Globe, User, Camera, Users, Palette, AndroidLogo } from 'phosphor-react';
 import { NavBar, Footer } from './Layout';
 import HelpPage from './HelpPage';
-import BlogPage, { BlogArticle } from './BlogPage';
+import BlogPage from './BlogPage';
 import DownloadPage from './DownloadPage';
 import SourcePage from './SourcePage';
+import TermsPage from './TermsPage';
+import PrivacyPage from './PrivacyPage';
 import NotFoundPage from './NotFoundPage';
 import './index.css';
 
@@ -30,7 +32,7 @@ function HomePage() {
             <img
               src="public/welcome.png"
               alt="Wryft chat preview"
-              style={{ width: 320, height: 680, borderRadius: 24, border: '2px solid rgba(255,255,255,0.5)', objectFit: 'cover' }}
+              style={{ width: 320, height: 680, borderRadius: 24, border: '2px solid rgba(255,255,255,0.5)', objectFit: 'contain' }}
             />
           </div>
         </div>
@@ -90,12 +92,12 @@ export default function App() {
   return (
     <Routes>
       <Route path="/" element={<HomePage />} />
-      <Route path="/help" element={<HelpPage />} />
-      <Route path="/help/:slug" element={<HelpPage />} />
       <Route path="/blog" element={<BlogPage />} />
-      <Route path="/blog/:slug" element={<BlogArticle />} />
-      <Route path="/download" element={<DownloadPage />} />
+      <Route path="/help" element={<HelpPage />} />
       <Route path="/source" element={<SourcePage />} />
+      <Route path="/terms" element={<TermsPage />} />
+      <Route path="/privacy" element={<PrivacyPage />} />
+      <Route path="/download" element={<DownloadPage />} />
       <Route path="*" element={<NotFoundPage />} />
     </Routes>
   );

@@ -6,7 +6,7 @@ export function NavBar() {
       <div className="nav-inner">
         <Link to="/" style={{ textDecoration: 'none' }}>
           <div className="nav-logo">
-            <img src="public/wryftcircle.png" alt="Wryft" style={{ width: 28, height: 28, borderRadius: 6 }} />
+            <img src="/src/assets/wryftcircle.png" alt="Wryft" style={{ width: 28, height: 28, borderRadius: 6 }} />
             Wryft
           </div>
         </Link>
@@ -48,8 +48,8 @@ export function Footer() {
           <div>
             <h4 className="footer-heading">Legal</h4>
             <ul className="footer-links">
-              <li><a href="#" className="footer-link">Privacy</a></li>
-              <li><a href="#" className="footer-link">Terms</a></li>
+              <li><Link to="/privacy" className="footer-link">Privacy</Link></li>
+              <li><Link to="/terms" className="footer-link">Terms</Link></li>
             </ul>
           </div>
         </div>
