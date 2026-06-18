@@ -28,7 +28,7 @@ function HomePage() {
           </div>
           <div style={{ marginTop: 64, display: 'flex', justifyContent: 'center' }}>
             <img
-              src="/src/assets/welcome.png"
+              src="public/welcome.png"
               alt="Wryft chat preview"
               style={{ width: 320, height: 680, borderRadius: 24, border: '2px solid rgba(255,255,255,0.5)', objectFit: 'cover' }}
             />
