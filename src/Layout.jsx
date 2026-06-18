@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom';
+import wryftCircle from './assets/wryftcircle.png';
 
 export function NavBar() {
   return (
@@ -6,7 +7,7 @@ export function NavBar() {
       <div className="nav-inner">
         <Link to="/" style={{ textDecoration: 'none' }}>
           <div className="nav-logo">
-            <img src="/src/assets/wryftcircle.png" alt="Wryft" style={{ width: 28, height: 28, borderRadius: 6 }} />
+            <img src={wryftCircle} alt="Wryft" style={{ width: 28, height: 28, borderRadius: 6 }} />
             Wryft
           </div>
         </Link>

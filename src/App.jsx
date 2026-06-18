@@ -8,6 +8,7 @@ import SourcePage from './SourcePage';
 import TermsPage from './TermsPage';
 import PrivacyPage from './PrivacyPage';
 import NotFoundPage from './NotFoundPage';
+import welcomeImg from './assets/welcome.png';
 import './index.css';
 
 function HomePage() {
@@ -30,7 +31,7 @@ function HomePage() {
           </div>
           <div style={{ marginTop: 64, display: 'flex', justifyContent: 'center' }}>
             <img
-              src="public/welcome.png"
+              src={welcomeImg}
               alt="Wryft chat preview"
               style={{ width: 320, height: 680, borderRadius: 24, border: '2px solid rgba(255,255,255,0.5)', objectFit: 'contain' }}
             />
